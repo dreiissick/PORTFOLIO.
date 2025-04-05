@@ -160,6 +160,33 @@ img {
   font-size: 1.5rem;
   cursor: pointer;
 }
+  .home__social {
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 1rem; 
+}
+
+.home__social-icon {
+  width: max-content;
+  margin-bottom: var(--mb-2);
+  font-size: 1.5rem;
+  color: var(--second-color);
+}
+.home__social-icon:hover {
+  color: var(--first-color);
+}
+.home__img {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  width: 55%;
+}
+.home__blob {
+  fill: var(--first-color);
+}
+.home__blob-img {
+  width: 450px;
+}
 /*Active menu*/
 .active-link::after {
   position: absolute;
