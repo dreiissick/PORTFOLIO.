@@ -452,7 +452,7 @@ img {
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
   color: var(--second-color);
-  margin-top: -4rem; 
+  margin-top: -1rem; 
 }
 .home__social-icon:hover {
   color: var(--first-color);
