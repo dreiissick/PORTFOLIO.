@@ -209,8 +209,8 @@ img {
 .home__img {
   position: absolute;
   right: 0;
-  top: 22%;
-  width: 47%;
+  top: 10%;
+  width: 55%;
 }
 .home__blob {
   fill: var(--first-color);
