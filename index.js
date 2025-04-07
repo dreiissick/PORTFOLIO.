@@ -16,7 +16,6 @@ const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
@@ -56,10 +55,10 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 700
 sr.reveal('.home__social-icon',{ interval: 300}); 
 sr.reveal('.skills__data, .hobbies__img, .contact__input',{interval: 200}); 
 
+
 const toggleCheckbox = document.getElementById("dark-mode-toggle");
   const body = document.body;
 
-  // Initial check from local storage
   if (localStorage.getItem("theme") === "dark") {
     body.classList.add("dark-theme");
     toggleCheckbox.checked = true;
@@ -74,5 +73,3 @@ const toggleCheckbox = document.getElementById("dark-mode-toggle");
       localStorage.setItem("theme", "light");
     }
   });
-
-
