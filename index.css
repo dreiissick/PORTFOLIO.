@@ -114,6 +114,61 @@ img {
 }
 
 /*===== NAV =====*/
+.toggle-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+#dark-mode-toggle {
+  display: none;
+}
+
+.toggle-switch {
+  width: 48px;
+  height: 24px;
+  background-color: #202020;
+  border-radius: 999px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.toggle-switch .emoji {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateX(0);
+}
+
+#dark-mode-toggle:checked + .toggle-switch {
+  background-color: #e6e6e6;
+}
+
+#dark-mode-toggle:checked + .toggle-switch .emoji {
+  transform: translateX(24px);
+  background-color: hsl(var(--hue-color), 89%, 60%);
+}
+
+.toggle-switch .emoji::before {
+  content: '🌙';
+}
+
+#dark-mode-toggle:checked + .toggle-switch .emoji::before {
+  content: '☀️';
+}
 .nav {
   height: var(--header-height);
   display: flex;
