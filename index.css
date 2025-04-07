@@ -216,7 +216,7 @@ img {
   fill: var(--first-color);
 }
 .home__blob-img {
-  width: 500px;
+  width: 390px;
 }
 
 /*BUTTONS*/
@@ -472,7 +472,7 @@ img {
   fill: var(--first-color);
 }
 .home__blob-img {
-  width: 450px;
+  width: 390px;
 }
 @media screen and (min-width: 768px) {
   body {
