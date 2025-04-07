@@ -56,3 +56,23 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 700
 sr.reveal('.home__social-icon',{ interval: 300}); 
 sr.reveal('.skills__data, .hobbies__img, .contact__input',{interval: 200}); 
 
+const toggleCheckbox = document.getElementById("dark-mode-toggle");
+  const body = document.body;
+
+  // Initial check from local storage
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-theme");
+    toggleCheckbox.checked = true;
+  }
+
+  toggleCheckbox.addEventListener("change", () => {
+    body.classList.toggle("dark-theme");
+
+    if (body.classList.contains("dark-theme")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  });
+
+
